@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CourseInfoComponent } from './courses/course-info/course-info.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CourseInfoComponent } from './courses/course-info/course-info.component
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'courses', pathMatch:'full' },
